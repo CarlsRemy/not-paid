@@ -1,0 +1,10 @@
+# Publish only the build output and package metadata
+*
+!dist/
+!dist/**
+!package.json
+!README.md
+!LICENSE
+
+# Keep npm ignore file itself
+!.npmignore

@@ -1,0 +1,60 @@
+{
+  "name": "not-paid",
+  "version": "1.2.0",
+  "description": "Not-Paid es una librería moderna diseñada para ayudar a desarrolladores a indicar visualmente cuando una prueba, membresía, suscripción o servicio ha alcanzado su fecha límite de pago.",
+  "main": "dist/not-paid.js",
+  "module": "dist/not-paid.mjs",
+  "types": "dist/not-paid.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/not-paid.mjs",
+      "require": "./dist/not-paid.cjs"
+    }
+  },
+  "scripts": {
+    "tsup": "tsup src/not-paid.ts --dts --format esm,cjs --minify --out-dir dist",
+    "build": "npm run tsup",
+    "test": "ts-mocha test/*"
+  },
+  "keywords": [
+    "not-paid",
+    "web-components",
+    "payment-status",
+    "payment-deadline",
+    "payment-indicator",
+    "subscription-status",
+    "membership-status",
+    "components",
+    "ui-components",
+    "ui-library",
+    "dominican-republic",
+    "dominican-developers",
+    "Frontend"
+  ],
+  "author": "Carlos Ismael .Y .R",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.5.8",
+    "chai": "^4.3.8",
+    "mocha": "^10.2.0",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "tsup": "^8.1.0",
+    "typescript": "^5.2.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+   
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarlsRemy/not-paid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CarlsRemy/not-paid/issues"
+  },
+  "homepage": "https://github.com/CarlsRemy/not-paid#readme"
+}
